@@ -1,0 +1,22 @@
+/* Define the initial style for the square */
+.animated-square {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    position: relative; /* Important for animations */
+}
+
+/* Define the animation */
+@keyframes moveRight {
+    from {
+        left: 0;
+    }
+    to {
+        left: 200px; /* Change this value to control the distance it moves */
+    }
+}
+
+/* Apply the animation to the square */
+.animated-square {
+    animation: moveRight 2s cubic-bezier(0.2, -0.55, 0.27, 1.55) infinite; /* Adjust duration and timing function as needed */
+}
